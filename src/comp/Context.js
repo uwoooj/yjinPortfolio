@@ -1,27 +1,25 @@
-import React, { createContext, useState } from 'react'
+import React, { createContext, useState } from "react";
 
 export const myContext = createContext("");
 
-function Context({children}) {
-
+function Context({ children }) {
     const [src, setSrc] = useState("");
-    const [data, setData] = useState("테스트용1");
-    const [hehe, setHehe] = useState("테스트용2");
+    const [data, setData] = useState("");
+    const [hehe, setHehe] = useState("");
 
     const testNum = () => {
-        console.log("유후")
-    }
+        console.log("test");
+    };
 
-  return (
-
-    <myContext.Provider value={{src, setSrc, data, setData, hehe, setHehe, testNum}}>
-        {children}
-    </myContext.Provider>
-
-  )
-
+    return (
+        <myContext.Provider
+            value={{ src, setSrc, data, setData, hehe, setHehe, testNum }}
+        >
+            {children}
+        </myContext.Provider>
+    );
 }
 
-export default Context
+export default Context;
 
-//데이터를 중앙에서 정리하는 
+//데이터를 중앙에서 정리하는

@@ -57,6 +57,7 @@ body {
 }
 
 .wrap {
+    overflow-x: hidden;
     .main {
         height: 95vh;
         display: flex;
@@ -73,10 +74,11 @@ body {
             position: absolute;
             z-index: 0;
             background-attachment: scroll;
-            font-size: 650px;
+            font-size: 35rem;
             opacity: 0.5;
         }
         .move-bg {
+            overflow: hidden;
             h2 {
             }
             ul {
@@ -96,11 +98,17 @@ body {
                     }
                 }
                 .eart {
-                    font-size: 6rem;
+                    display: flex;
+                    align-items: center;
+                    // font-size: 6rem;
                     margin-top: 15px;
-                    img {
-                        width: 5rem;
-                        height: 5rem;
+                    span {
+                        display: flex;
+                        align-items: center;
+                        img {
+                            width: 5rem;
+                            height: 5rem;
+                        }
                     }
                 }
             }
@@ -118,7 +126,7 @@ body {
             width: 100%;
 
             font-family: "TheJamsil5Bold";
-            font-size: 525px;
+            font-size: 35rem;
             position: absolute;
             z-index: 0;
             background-attachment: scroll;
@@ -127,24 +135,27 @@ body {
         }
         p {
             text-align: left;
-            width: 1065px;
             font-family: "Happiness-Sans-Bold";
             z-index: 88;
             color: #000;
-            font-size: 110px;
             line-height: 1.4;
-            font-size: 30px;
+            font-size: 2rem;
             text-align: center;
+            padding: 0px 110px;
         }
     }
     .project {
         font-family: "Happiness-Sans-Bold";
         .move-bg {
             h2 {
-                font-size: 50px;
+                font-size: 3.1rem;
                 text-align: center;
                 font-weight: bold;
                 margin-bottom: 110px;
+            }
+            figure {
+                img {
+                }
             }
             ul {
                 // position: relative;
@@ -208,7 +219,7 @@ body {
                         .two_box {
                             a {
                                 margin-top: 10px;
-                                font-size: 20px;
+                                font-size: 1.3rem;
                                 font-weight: bold;
                                 .arow {
                                     width: 12px;
@@ -390,10 +401,324 @@ body {
     pointer-events: none;
 }
 
-@media (min-width: 768px) and (max-width: 1280px) {
-}
-@media (max-width: 767px) {
+@media only screen and (max-width: 1024px) {
+    .wrap {
+        .main {
+            .point {
+                font-size: 32rem;
+            }
+        }
+    }
     .move-bg {
-        font-size: 5rem;
+        .title {
+            font-size: 5rem;
+        }
+        .eart {
+            font-size: 5rem;
+        }
+    }
+    .wrap {
+        .intro {
+            > p {
+                font-size: 1.7rem;
+                padding: 0px 55px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .wrap {
+        .main {
+            .point {
+                font-size: 30rem;
+            }
+            .move-bg {
+                .title {
+                    margin-left: 0;
+                    font-size: 4rem;
+                    padding: 0;
+                }
+                .txt {
+                    .eart {
+                        margin-left: 0;
+                        font-size: 4rem;
+                        img {
+                            width: 4rem;
+                            height: 4rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        .intro {
+            > p {
+                font-size: 1.4rem;
+                padding: 0px 55px;
+            }
+        }
+        .project {
+            .move-bg {
+                figure {
+                    img {
+                        width: 20%;
+                    }
+                }
+                ul {
+                    li {
+                        border-left: 0;
+                        border-right: 0;
+                        > a {
+                            padding: 0px 70px;
+                            .one_box {
+                                strong {
+                                    font-size: 1.5rem;
+                                }
+                                p {
+                                    font-size: 0.9rem;
+                                }
+                                span {
+                                    font-size: 0.8rem;
+                                }
+                            }
+                        }
+                    }
+                }
+                .two_box {
+                    a {
+                        font-size: 1.2rem;
+                    }
+                    .icon {
+                        justify-content: flex-start !important;
+                    }
+                }
+            }
+        }
+        .contact {
+            .area {
+                margin: 0;
+                .tit {
+                    a {
+                        font-size: 5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .header {
+        ul {
+            li {
+                margin-right: 30px;
+            }
+        }
+    }
+
+    .wrap {
+        .main {
+            .point {
+                font-size: 25rem;
+            }
+            .move-bg {
+                .title {
+                    font-size: 3.3rem;
+                    padding: 0 50px;
+                }
+                .txt {
+                    .eart {
+                        font-size: 3rem;
+                        padding: 0 50px;
+                        span {
+                            img {
+                                width: 4rem;
+                                height: 4rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .intro {
+            > p {
+                font-size: 1.4rem;
+                padding: 0px 30px;
+            }
+        }
+        .project {
+            .move-bg {
+                figure {
+                    img {
+                        width: 20%;
+                    }
+                }
+                ul {
+                    li {
+                        border-left: 0;
+                        border-right: 0;
+                        > a {
+                            padding: 0px 70px;
+                            .one_box {
+                                strong {
+                                    font-size: 1.5rem;
+                                }
+                                p {
+                                    font-size: 0.9rem;
+                                }
+                                span {
+                                    font-size: 0.8rem;
+                                }
+                            }
+                        }
+                    }
+                }
+                .two_box {
+                    a {
+                        font-size: 1rem;
+                    }
+                    .icon {
+                        justify-content: flex-start !important;
+                    }
+                }
+            }
+        }
+        .contact {
+            .area {
+                .cont_wrap {
+                    margin-right: 0;
+                }
+                margin: 0 30px;
+                .tit {
+                    margin-left: 40px;
+                    a {
+                        font-size: 4rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .header {
+        ul {
+            display: none;
+        }
+    }
+    .wrap {
+        .main {
+            .point {
+            }
+            .move-bg {
+                .title {
+                    font-size: 2.3rem;
+                }
+                .txt {
+                    .eart {
+                        font-size: 2.3rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 400px) {
+    .wrap {
+        .main {
+            .move-bg {
+                .ponit {
+                    font-size: 17rem;
+                }
+                .title {
+                    font-size: 1.4rem;
+                    padding: 0px 35px;
+                }
+                .txt {
+                    .eart {
+                        font-size: 1.4rem;
+                        padding: 0 35px;
+                        span {
+                            img {
+                                width: 2.2rem;
+                                height: 2.2rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .intro {
+            p {
+                padding: 0px 37px;
+                font-size: 1rem;
+            }
+        }
+        .project {
+            .move-bg {
+                h2 {
+                    font-size: 2.1rem;
+                }
+                ul {
+                    li {
+                        > a {
+                            padding: 0px 30px;
+                            .one_box {
+                                strong {
+                                    font-size: 1rem;
+                                }
+                                p {
+                                    font-size: 0.68rem;
+                                }
+                                span {
+                                    font-size: 0.6rem;
+                                }
+                            }
+                            .two_box {
+                                a {
+                                    font-size: 1rem;
+                                }
+                                margin-left: 40px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .contact {
+            .area {
+                .cont_wrap {
+                    margin-right: 0;
+                    .card {
+                        width: 150px;
+                        height: 150px;
+                    }
+
+                    .link {
+                        margin-right: 30px;
+                    }
+                }
+                .area {
+                    p {
+                        font-size: 1.3rem;
+                    }
+                }
+                .tit {
+                    margin-left: 20px;
+                    a {
+                        font-size: 3rem;
+                    }
+                }
+            }
+        }
+        .tag {
+            .move {
+                span {
+                    font-size: 2.2rem;
+                }
+            }
+        }
     }
 }

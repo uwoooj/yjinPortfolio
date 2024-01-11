@@ -91,7 +91,7 @@ function Home() {
             img: "./facilites_logo.png",
             siteHref: "https://uwoooj.github.io/git-team01/",
             gitHref: "https://github.com/uwoooj/git-team01",
-            vHref: "https://www.notion.so/LionHill-8aa57e2b84c9442b96a735b34592c9b6?pvs=4",
+            vHref: "https://www.notion.so/LionHill-8aa57e2b84c9442b96a735b34592c9b6?pvs=4hg",
             tag: "#JavaScript #SASS #JQuery #KaKao Login, Map API",
         },
 
@@ -162,14 +162,14 @@ function Home() {
                 </strong>
                 <div className="move-bg">
                     <div data-aos="zoom-in" className="txt">
-                        <p>CREATIVE WEB</p>
-                        <p> PUBLISHER</p>
+                        <p className="title">CREATIVE WEB</p>
+                        <p className="title"> PUBLISHER</p>
                         <p className="eart">
                             P
                             <span>
                                 <img src="./o.png"></img>
                             </span>
-                            RTFOLIO@2023
+                            RTFOLIO@2024
                         </p>
                     </div>
                 </div>
