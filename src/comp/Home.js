@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useRef, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "../App.scss";
+import "../jin_favicon.ico";
 import { myContext } from "./Context";
 
 function Home() {
